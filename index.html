@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is an E-commerce-project for making Hasan Express"
+    />
+    <title>E-commerce-project</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome-cdn-link -->
+    <script
+      src="https://kit.fontawesome.com/eaf9e3cac8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css-link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      
+        <!-- upper nav start here -->
+        <ul class="nav-upper flex-space-around">
+          <li class="nav-list"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-list"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-list"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-list"><a class="nav-link" href="index.html">Logout</a></li>
+          <li class="nav-list"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-list"><a class="nav-link" href="profile.html"><img class="profile-icon" src="image/my-photo.webp" alt=""></a></li>
+          
+        </ul>
+        <!-- upper nav end here -->
+        <!-- lower nav start here -->
+        <ul class="nav-lower flex-space-around">
+          <li class="nav-list"><a href="index.html" class=" nav-brand nav-link">Hasan Express</a></li>
+          <li class="nav-list"><a href="cart.html" class="  nav-link">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart 2 Products-$124.40
+          </a></li>
+        </ul>
+         
+        </ul>
+        <!-- lower nav end here -->
+
+      </nav>
+      <!-- navbar end here -->
+      <!-- header start here -->
+        <header class="header">
+            <div class="banner flex-space-around ">
+              <marquee class="banner-title" behavior="" direction="">50% sales going on</marquee>
+              <div class="features flex-space-around ">
+                <article class="feature">
+                  <i class="fas fa-truck-monster"></i>
+                  <h3>Shipping within 7 days</h3>
+
+                </article>
+                <article class="feature">
+                  <i class="fab fa-rocketchat"></i>
+                  <h3>Support 24/7</h3>
+
+                </article>
+                <article class="feature">
+                <i class="far fa-credit-card"></i>
+                  <h3>Safe payment</h3>
+
+                </article>
+              </div>
+            </div>
+        </header>
+      <!-- header end here -->
+      <main class= "flex-center">
+        <div class="sidebar">
+          <section class="categories-section">
+            <h3 class="section-title">
+              Categories
+            </h3>
+            <ul class="list">
+              <li class="list-item">
+                <label for="phone"><input type="checkbox" name="phone"id="phone" value="phone">Phone</label>
+              </li>
+              <li class="list-item">
+                <label for="tablets"><input type="checkbox" name="tablets"id="tablets" value="tablets">Tablets</label>
+              </li>
+              <li class="list-item">
+                <label for="Television"><input type="checkbox" name="Television"id="Television" value="Television">Television</label>
+              </li>
+              <li class="list-item">
+                <label for="Headphone"><input type="checkbox" name="Headphone"id="Headphone"value="Headphone">Headphone</label>
+              </li>
+              <l class="list-item">
+                <label for="Computers"><input type="checkbox" name="Computers"id="Computers" value="Computer">Computers</label>
+              
+            </ul>
+          </section>
+          <section class="Price-section">
+            <h3 class="section-title">
+              Price Range
+            </h3>
+            <ul class="list">
+              <li class="list-item">
+                <label for="Price"><input type="radio" name="Price"id="Price" value="[0,10]">$0-$10</label>
+              </li>
+              <li class="list-item">
+                <label for="Price1"><input type="radio" name="Price1"id="Price1" value="[0,20]">$0-$20</label>
+              </li>
+              <li class="list-item">
+                <label for="Price2"><input type="radio" name="Price2"id="Price2" value="[0,30]">$0-$30</label>
+              </li>
+              <li class="list-it3em">
+                <label for="Price3"><input type="radio" name="Price3"id="Price3" value="[0,40]">$0-$40</label>
+              </li>
+
+              
+              
+            </ul>
+          </section>
+            <section class="Shipping-section">
+              <h3 class="section-title">
+                Shipping optaions
+              </h3>
+              <ul class="list">
+                <li class="list-item">
+                  <label for="free"><input type="radio" name="free" id="free" value="free">Free Shipping</label>
+                </li>
+                <li class="list-item">
+                  <label for="paid"><input type="radio" name="paid" id="paid" value="paid">paid Shipping</label>
+                </li>
+              </ul>
+        </div>
+        <div class="main-content">
+          <section class="action flex-space-around">
+              <div class="action-sort">
+                <label for="sort">Sort By:</label>
+                <select name="sort" id="sort">
+                  <option value="sold">Most sold first</option>
+                  <option value="sold">Most rated first</option>
+                  <option value="sold">Cheapest first</option>
+                  <option value="sold">Newest first</option>
+                  <option value="sold">Biggest discount first</option>
+                </select>
+              </div>
+              <div class="action-search">
+                <input type="text" placeholder="Search product"/>
+                <button class="btn">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+
+          </section>
+           <!-- product start here -->
+           <section class="products">
+            <article class="product card">
+              <div class="badge">
+                <span>5 in stock</span>
+                <hr class="hr-design">
+                <span>3 sold</span>
+              </div>
+              <img class="product-img" src="image/products-1.webp" alt="">
+              <div class="product-body">
+                <h3 class="Product-name">Sony V-6 Headphone</h3>
+                <p>
+                  <span class="dot green"></span>
+                  <span class="dot black"></span>
+                  <span class="dot red"></span>
+
+                </p>
+                <p class="product-discription">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque necessitatibus nam ducimus vero nisi?.... <a href="/product.html">Learn more</a>
+                </p>
+                <h4 class="product-price">$225.99</h4>
+                <p class="proudct-rating">Rating:4.5/5</p>
+                <button class="btn product-button">Add to card</button>
+
+              </div>
+
+            </article>
+            <article class="product card">
+              <div class="badge">
+                <span>2 in stock</span>
+                <hr class="hr-design">
+                <span>6 sold</span>
+              </div>
+              <img class="product-img" src="image/p2.webp" alt="">
+              <div class="product-body">
+                <h3 class="Product-name">Apple R-6 </h3>
+                <p>
+                  <span class="dot green"></span>
+                  <span class="dot black"></span>
+                  <span class="dot red"></span>
+
+                </p>
+                <p class="product-discription">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque necessitatibus nam ducimus vero nisi?.... <a href="/product.html">Learn more</a>
+                </p>
+                <h4 class="product-price">$225.99</h4>
+                <p class="proudct-rating">Rating:4.5/5</p>
+                <button class="btn product-button">Add to card</button>
+
+              </div>
+
+            </article>
+            <article class="product card">
+              <div class="badge">
+                <span>10 in stock</span>
+                <hr class="hr-design">
+                <span>5 sold</span>
+              </div>
+              <img class="product-img" src="image/p3.webp" alt="">
+              <div class="product-body">
+                <h3 class="Product-name">Apple 6 pro</h3>
+                <p>
+                  <span class="dot green"></span>
+                  <span class="dot black"></span>
+                  <span class="dot red"></span>
+
+                </p>
+                <p class="product-discription">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque necessitatibus nam ducimus vero nisi?.... <a href="/product.html">Learn more</a>
+                </p>
+                <h4 class="product-price">$225.99</h4>
+                <p class="proudct-rating">Rating:4.5/5</p>
+                <button class="btn product-button">Add to card</button>
+
+              </div>
+
+            </article>
+
+           </section>
+           <!-- product end here -->
+
+        </div>
+    </main>
+      <!-- footers start here -->
+      <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+        <label for="Subscribe">Subscribe:</label>
+          <input type="email" 
+          id="Subscribe" 
+          name="Subscribe"
+          placeholder="Your email address"
+          class="footer-input">
+          <button class="btn btn-Subscribe">Subscribe</button>
+        </div>
+        <div>
+          <p>
+            &copy Copyright 2023 || Hasan Express
+          </p>
+        </div>
+      </footer>
+      <!-- footers end here -->
+    </header>
+
+
+
+
+  </body>
+</html>
